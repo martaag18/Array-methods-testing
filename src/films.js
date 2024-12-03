@@ -47,7 +47,12 @@ function moviesAverageByCategory(movies, category) {
 function hoursToMinutes() {}
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear() {}
+function bestFilmOfYear(movies, year) {
+  let filteredMovies = movies.filter((movie) => movie.year === year);
+  let orderedMovies = filteredMovies.sort((a, b) => b.score - a.score)
+  let bestMovie = orderedMovies.slice(0, 1);
+  return bestMovie;º
+}
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
