@@ -1,86 +1,143 @@
-# Sprint 3 IT Academy | Video management tool
+S3.1-Delivery Testing-Level1
 
-## Introduction
+📄 Description
+Welcome to the repository for Sprint 3! 🎬 In this delivery, we dive into the world of testing. The main goal of this project is to implement several functions related to handling arrays of movies and to pass a series of unit tests to ensure the code works as intended. 🚀
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+How does it work? As you develop the code, you will run the tests and move from a "fully red" environment (failing tests) to a bright green one that signals success. 🟢
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
+💻 Technologies Used
+The following technologies and tools were used in this project:
 
-<br>
+JavaScript ES6: For implementing the code.
+Node.js: To run the project and manage dependencies.
+Jest: A JavaScript testing framework.
+Visual Studio Code: Recommended code editor.
+Live Server: To view testing results in real time.
+npm: Package manager to run scripts and install dependencies.
 
-## Requirements
+📋 Requirements
+To run this project, you’ll need:
 
+Node.js (version 14 or higher).
+npm (usually included with Node.js).
+A text editor like Visual Studio Code.
+The Live Server plugin (optional but recommended).
 
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
-```
+ Installation
+Follow these steps to set up the project in your local environment:
 
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
+Clone the repository:
 
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
+bash
+Copiar código
+git clone https://github.com/IT-Academy-BCN/S3.1-Delivery-Testing-Level1.git
+Navigate to the project directory:
 
-<br>
+bash
+Copiar código
+cd S3.1-Delivery-Testing-Level1
+Install the required dependencies:
 
-## Submission
+bash
+Copiar código
+npm install
+You’re ready to go! 🎉
 
-1. Upon completion, run the following commands:
+▶️ Running the Project
+To run the project and test the implementation, use the following command:
 
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
-
-2. Create Pull Request.
-
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
-
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
-## Tests!
+bash
+Copiar código
+npm run test:watch
+This command activates the tests interactively and generates an HTML file (test-results.html) to view the results in real time.
 
 
-```shell
-$ npm install
-$ npm run test:watch
-```
+Sure! Here's the same README.md translated into professional and engaging English:
 
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
+S3.1-Delivery Testing-Level1
+📄 Description
+Welcome to the repository for Sprint 3! 🎬 In this delivery, we dive into the world of testing. The main goal of this project is to implement several functions related to handling arrays of movies and to pass a series of unit tests to ensure the code works as intended. 🚀
 
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
+How does it work? As you develop the code, you will run the tests and move from a "fully red" environment (failing tests) to a bright green one that signals success. 🟢
 
-<br>
+💻 Technologies Used
+The following technologies and tools were used in this project:
 
-## Instructions
+JavaScript ES6: For implementing the code.
+Node.js: To run the project and manage dependencies.
+Jest: A JavaScript testing framework.
+Visual Studio Code: Recommended code editor.
+Live Server: To view testing results in real time.
+npm: Package manager to run scripts and install dependencies.
+📋 Requirements
+To run this project, you’ll need:
 
-You have the following indications from the frontend responsible:
+Node.js (version 14 or higher).
+npm (usually included with Node.js).
+A text editor like Visual Studio Code.
+The Live Server plugin (optional but recommended).
+🛠️ Installation
+Follow these steps to set up the project in your local environment:
 
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
+Clone the repository:
 
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
+bash
+Copiar código
+git clone https://github.com/IT-Academy-BCN/S3.1-Delivery-Testing-Level1.git
+Navigate to the project directory:
 
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
+bash
+Copiar código
+cd S3.1-Delivery-Testing-Level1
+Install the required dependencies:
 
-- The logic to implement will be placed in the src/films.js file.
+bash
+Copiar código
+npm install
+You’re ready to go! 🎉
 
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
+▶️ Running the Project
+To run the project and test the implementation, use the following command:
 
-- Don't forget to include the capture of the test results in the virtual campus.
+bash
+Copiar código
+npm run test:watch
+This command activates the tests interactively and generates an HTML file (test-results.html) to view the results in real time.
 
+🌐 Deployment
+To view the test results in a browser:
 
+Make sure you have the Live Server extension installed in Visual Studio Code.
+Open the file test-results.html using Live Server.
+View the results in real time as you pass the tests.
+
+📂 Repository Contents
+Functionality Overview:
+
+Exercise 1: Get an array of all directors using getAllDirectors().
+Exercise 2: Filter movies by a director using getMoviesFromDirector().
+Exercise 3: Calculate the average score for a director's movies using moviesAverageOfDirector().
+Exercise 4: Sort movies alphabetically by title and return the first 20 using orderAlphabetically().
+Exercise 5: Sort movies by year and by title in case of ties using orderByYear().
+Exercise 6: Calculate the average score of a specific genre using averageByGenre().
+Exercise 7: Convert movie durations (hours and minutes) into total minutes using convertDurationToMinutes().
+Exercise 8: Return the best movie for each year using bestMovieOfYear().
+Project Structure:
+
+/src: Contains the implemented functions.
+/tests: Includes unit tests for each function (films.spec.js).
+
+📝 Testing Notes
+Tests are a key part of this project. Here are some tips to make the most of them:
+
+Run tests interactively using:
+bash
+Copiar código
+npm run test:watch
+Check the test-results.html file for visual feedback on the test results.
+If a test fails, read the error message carefully and use console.log in your code to debug.
+Aim for all tests to turn green before considering the project complete. 🟢
+
+🎬 Fun Notes
+Watching all your tests go from red to green is oddly satisfying. 🟢✨
+Remember: Programming to satisfy tests can be challenging at first, but it’s an essential skill that becomes second nature over time.
